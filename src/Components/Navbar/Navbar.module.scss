@@ -1,0 +1,120 @@
+@import '../../Global\ Styles/Global.module.scss';
+
+
+nav{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  margin: 42px 0;
+  img{
+    display: none;
+  }
+}
+
+.navigator{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 5%;
+}
+
+.left{
+    width: 40%;
+    max-width: 375px;
+  ul{
+    cursor: pointer;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+      @include fontStyle(white, 20px, 400,$navfont);
+      text-decoration: none;
+  }
+}
+
+.mid{
+  position: absolute;
+  a{
+    
+  
+
+    p{
+      cursor: pointer;
+      @include fontStyle(white, 51px, 800,$logofont);
+    }
+    text-decoration: none;
+
+  }
+}
+
+.right{
+  width: 40%;
+  max-width: 375px;
+  ul{
+    cursor: pointer;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    @include fontStyle(white, 20px, 400,$navfont);
+      text-decoration: none;
+  }
+}
+
+
+@media screen and (max-width:950px) {
+  nav{
+    margin: 20px 10%;
+    justify-content: space-between;
+    img{
+      display: flex;
+      transition: all 0.4s;
+    }
+  }
+  .mid{
+    position:static;
+    
+      p{
+        font-size:33px;
+      }
+  
+  }
+  .navigator{
+    z-index: 2;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    right:0;
+    left: -17.5%;
+    top:-2000%;
+    bottom: 0;
+    align-items: center;
+    gap:50px;
+    width: 100vw;
+    height: fit-content ;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.836);
+    transition: all 0.8s;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+  }
+  .left, .right{
+    
+    ul{
+      text-align: center;
+      flex-direction: column;
+      gap:50px;
+      transition: all 0.6s;
+    }
+  }
+
+  .show{
+    display: flex;
+    top:60px;
+    bottom: 0;
+  }
+}

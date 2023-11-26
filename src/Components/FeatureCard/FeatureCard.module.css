@@ -1,0 +1,27 @@
+@import url("https://fonts.cdnfonts.com/css/apercu-pro");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anybody:wght@300;400;500&display=swap");
+.card {
+  width: 495px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 45px 47px;
+  background: linear-gradient(269deg, #FFCF32 0%, #F5B00D 100%);
+  border-radius: 29.91px;
+}
+.card .topText {
+  color: black;
+  font-size: 28px;
+  font-weight: 500;
+  font-family: Anybody;
+  line-height: 42px;
+  max-width: 401px;
+}
+.card .bottomText {
+  color: #8B6408;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: Anybody;
+  line-height: 27px;
+}/*# sourceMappingURL=FeatureCard.module.css.map */

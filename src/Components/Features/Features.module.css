@@ -1,0 +1,8 @@
+.page1::-webkit-scrollbar {
+  display: none;
+}
+
+.features {
+  height: 100vh;
+  margin: 6%;
+}/*# sourceMappingURL=Features.module.css.map */

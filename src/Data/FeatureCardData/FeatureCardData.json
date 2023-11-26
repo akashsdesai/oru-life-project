@@ -1,0 +1,18 @@
+[
+  {
+    "id":0,
+    "topText":"You already have a cleaner",
+    "bottomText":"be it a maid, local cleaner, driver, or watchman"
+  },
+  {
+    "id":1,
+    "topText":"You don't have a cleaner",
+    "bottomText":"but want to hire a daily cleaner"
+
+  },
+  {
+    "id":2,
+    "topText":"You prefer to wash your car yourself",
+    "bottomText":null
+  }
+]

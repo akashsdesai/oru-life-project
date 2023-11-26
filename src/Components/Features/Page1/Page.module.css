@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Anybody:wght@300;500&display=swap");
+@import url("https://fonts.cdnfonts.com/css/apercu-pro");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap");
+.page {
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
+
+.container1 {
+  display: flex;
+  justify-content: center;
+  margin: -40% 0 0 0;
+  align-items: center;
+}
+
+.bg {
+  background: linear-gradient(269deg, #F5B00D 0%, #FFCF32 100%);
+}
+
+.one {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.one p {
+  max-width: 781px;
+  line-height: 72px;
+  color: black;
+  font-size: 48px;
+  font-weight: 300;
+  font-family: Anybody;
+}
+
+.dark {
+  font-weight: 500;
+}
+
+.mobile {
+  position: relative;
+  margin-right: 10%;
+}
+
+.phone {
+  z-index: -1;
+  filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.7));
+}
+
+.card {
+  z-index: 1;
+  position: absolute;
+  bottom: 80px;
+  right: -90px;
+}
+
+.coin {
+  z-index: 5;
+  position: absolute;
+  top: -42%;
+  right: -78px;
+  filter: drop-shadow(5px 10px 14px rgba(0, 0, 0, 0.6));
+}
+
+.defender {
+  position: absolute;
+  top: -75%;
+  left: -70px;
+  filter: drop-shadow(5px 10px 14px rgba(0, 0, 0, 0.6));
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.two {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.two p {
+  max-width: 717px;
+  line-height: 72px;
+  color: black;
+  font-size: 48px;
+  font-weight: 300;
+  font-family: Anybody;
+}
+
+.vector {
+  position: relative;
+  margin-right: 10%;
+}
+
+.object2 {
+  filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.7));
+}
+
+.towel, .bucket {
+  position: absolute;
+  filter: drop-shadow(5px 10px 14px rgba(0, 0, 0, 0.6));
+}
+
+.towel {
+  top: -50%;
+  right: -40%;
+}
+
+.bucket {
+  top: -68%;
+  left: -38%;
+}
+
+.container3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 95%;
+  align-items: center;
+}
+
+.three {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.three p {
+  max-width: 702px;
+  line-height: 72px;
+  color: black;
+  font-size: 48px;
+  font-weight: 300;
+  font-family: Anybody;
+}
+.three img {
+  height: 720px;
+  width: 471px;
+  filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.6));
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottom {
+  margin-top: 8%;
+}
+
+.tiltPhone {
+  position: absolute;
+  right: 8%;
+  top: 115%;
+}
+
+@media screen and (max-width: 1350px) {
+  .one, .two, .three {
+    position: relative;
+    flex-direction: column;
+  }
+  .container1 {
+    width: 80%;
+    margin: -150vh 5% 0 0;
+  }
+  .one {
+    width: 80%;
+  }
+  .one p {
+    font-size: 26px;
+    line-height: 39px;
+  }
+  .phone {
+    width: 185px;
+    height: 381px;
+  }
+  .card {
+    width: 124px;
+    height: 103px;
+    bottom: 65px;
+    right: -61px;
+  }
+  .coin {
+    /* margin: -380%  0%  0% 70%; */
+    top: -95%;
+    scale: 0.8;
+  }
+  .defender {
+    scale: 0.8;
+    top: -125%;
+    /* margin:-500%  0%  0% -40%; */
+  }
+  .container2 {
+    margin: -90px 5% 0 0%;
+    width: 80%;
+  }
+  .two {
+    width: 80%;
+    margin-left: -2%;
+  }
+  .two P {
+    font-size: 26px;
+    line-height: 39px;
+  }
+  .vector {
+    scale: 0.5;
+    margin: 0;
+  }
+  .towel, .bucket {
+    scale: 0.9;
+  }
+}/*# sourceMappingURL=Page.module.css.map */

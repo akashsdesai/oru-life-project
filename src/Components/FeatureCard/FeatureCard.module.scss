@@ -1,0 +1,23 @@
+@import '../../Global\ Styles/Global.module.scss';
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@300;400;500&display=swap');
+$fontBody:Anybody;
+
+.card{
+  width: 495px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 45px 47px;
+  background: linear-gradient(269deg, #FFCF32 0%, #F5B00D 100%); 
+  border-radius: 29.91px;
+  .topText{
+    @include fontStyle(black,28px,500,$fontBody);
+    line-height: 42px;
+    max-width: 401px;
+  }
+  .bottomText{
+    @include fontStyle(#8B6408, 18px, 400, $fontBody);
+    line-height: 27px;
+  }
+}
+

@@ -1,0 +1,119 @@
+@import '../../Global\ Styles/Global.module.scss';
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@300&wght@500&display=swap');
+$herofont:Anybody;
+
+.hero{
+ 
+  position: relative;
+  height: 87.5vh;
+  .bg{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top:-107px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    filter: brightness(70%); 
+    object-fit: cover;
+  }
+
+}
+
+.mid{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  button{
+    display: none;
+    background: white;
+    border-radius: 6.48px;
+    padding: 10.6px 20px;
+    border: none;
+    margin: 24px 5%;
+  }
+}
+
+.top{
+  @include fontStyle(white,66px,500,$herofont);
+  max-width:860px;
+  text-align: center;
+  line-height: 79.61px;
+  margin-top: 8%;
+  animation: 2s anim-lineUp ease-out;
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+.bottom{
+  @include fontStyle(white,36px,300,$herofont);
+  text-align: center;
+  line-height: 60px;
+  margin-top: 5px;
+  animation: 5s anim-lineUp ease-out;
+}
+
+.mobilebg{
+  display: none;
+}
+
+@media screen and (max-width:950px) {
+  .hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  .mid{
+    align-items: baseline;
+    margin: 0 32px 0 5%;
+    text-align: start;
+    button{
+      display: flex;
+      max-width: 153px;
+      justify-content: center;
+      animation: 5s anim-lineUp ease-out;
+    }
+  }
+
+  .top{
+    text-align: start;
+    font-size: 42px;
+    margin-bottom: 10px;
+    line-height: 50px;
+  }
+  .bottom{
+    font-size:18px;
+    line-height: 24px;
+    margin: 0;
+    text-align: start;
+  }
+  .bg{
+    display: none;
+  }
+  .mobilebg{
+    margin-top: 35px;
+    display: flex;
+    width: 100%;
+    max-width: 480px;
+    object-fit: cover;
+    animation: 2s anim-lineUp ease-out;
+  }
+}

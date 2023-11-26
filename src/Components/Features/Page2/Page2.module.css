@@ -1,0 +1,119 @@
+@import url("https://fonts.cdnfonts.com/css/apercu-pro");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anybody:wght@300;500&display=swap");
+.bg {
+  background: #211F1C;
+}
+
+.container1 {
+  display: flex;
+  margin-top: 75%;
+  justify-content: center;
+  align-items: center;
+}
+
+.one, .three {
+  width: 100%;
+  max-width: 748px;
+  height: 100%;
+}
+.one p, .three p {
+  text-align: center;
+  color: #E8E8E8;
+  font-size: 36px;
+  font-weight: 300;
+  font-family: Anybody;
+  line-height: 54px;
+}
+.one p .bold, .three p .bold {
+  font-weight: 500;
+}
+.one p .logo, .three p .logo {
+  color: #F5B00D;
+  font-weight: 500;
+}
+
+.three p {
+  text-align: start;
+}
+
+.container2 {
+  display: flex;
+  margin-top: 105%;
+  justify-content: center;
+  align-items: center;
+}
+
+.two {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10% 0 5%;
+}
+
+.right {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top {
+  margin-left: 10%;
+}
+
+.bottom {
+  margin-right: 10%;
+}
+
+.phone {
+  display: flex;
+  margin-top: 140%;
+  justify-content: center;
+  align-items: center;
+}
+.phone img {
+  width: 475px;
+  height: 726px;
+}
+
+.container3 {
+  width: 100vh;
+  justify-content: center;
+  margin-top: 80%;
+  display: flex;
+}
+
+.rightSide {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.right1 {
+  margin-left: 30%;
+}
+
+.right2 {
+  margin-left: 15%;
+}
+
+.rightPhone {
+  margin-top: -55%;
+  margin-left: 20%;
+}
+.rightPhone img {
+  width: 715px;
+  height: 1093px;
+}
+
+.leftPhone {
+  margin-top: -8%;
+  margin-left: 2.5%;
+}
+.leftPhone img {
+  width: 563px;
+  height: 861px;
+}/*# sourceMappingURL=Page2.module.css.map */
